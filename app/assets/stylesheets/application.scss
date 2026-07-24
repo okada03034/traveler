@@ -1,4 +1,23 @@
+/*
+ * This is a manifest file that'll be compiled into application.css.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ 
  @import "bootstrap";
+
+  html,
+ body {
+   width: 100%;
+   height: 100%;
+   margin: 0;
+   padding: 0;
+ }
+ 
+ .profiler-results {
+   display: none;
+ }
 
  header {
   display: flex;
