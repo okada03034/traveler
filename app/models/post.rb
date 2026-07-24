@@ -1,4 +1,5 @@
 class Post < ApplicationRecord
-    attachment :image  # または has_one_attached :image
+    has_one_attached :image
     belongs_to :user
+    has_many :comments, dependent: :destroy
 end
