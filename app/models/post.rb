@@ -1,3 +1,4 @@
 class Post < ApplicationRecord
- has_one_attached :image
+    attachment :image  # または has_one_attached :image
+    belongs_to :user
 end
